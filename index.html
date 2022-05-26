@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="body01">
+    <h1>Let's Play!</h1>
+    <div class="row">
+      <div class="col-md-6 player1">
+        <h3>Player 1</h3>
+        <div class="dice1 dice row">
+          <div class="columna align-self-center">
+            <div id="d1_01" class="circle">1</div>
+            <div id="d1_02" class="circle">2</div>
+            <div id="d1_03" class="circle">3</div>
+          </div>
+          <div class="columna align-self-center">
+            <div id="d1_04" class="circle inv">4</div>
+            <div id="d1_05" class="circle inv">5</div>
+            <div id="d1_06" class="circle inv">6</div>
+          </div>
+          <div class="columna align-self-center">
+            <div id="d1_07" class="circle">7</div>
+            <div id="d1_08" class="circle">8</div>
+            <div id="d1_09" class="circle">9</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 player2">
+        <h3>Player 2</h3>
+        <div class="dice2 dice row">
+          <div class="columna align-self-center">
+            <div id="d2_01" class="circle">1</div>
+            <div id="d2_02" class="circle">2</div>
+            <div id="d2_03" class="circle">3</div>
+          </div>
+          <div class="columna align-self-center">
+            <div id="d2_04" class="circle inv">4</div>
+            <div id="d2_05" class="circle inv">5</div>
+            <div id="d2_06" class="circle inv">6</div>
+          </div>
+          <div class="columna align-self-center">
+            <div id="d2_07" class="circle">7</div>
+            <div id="d2_08" class="circle">8</div>
+            <div id="d2_09" class="circle">9</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div id="p1w" class="winner align-self-center invisible">
+        <h2>Player 1 wins</h2>
+      </div>
+      <div id="p2w" class="winner align-self-center invisible">
+        <h2>Player 2 wins</h2>
+      </div>
+      <div id="draw0" class="winner align-self-center invisible">
+        <h2>Draw</h2>
+      </div>
+    <div class="row">
+      <div id="btn-lp" class="buttons">
+        <button type="button" name="button" class="btn-lg btn-light btn" onclick="letsPlay()">Let's Play</button>
+      </div>
+      <div id="btn-rm" class="buttons invisible">
+        <button type="button" name="button" class="btn-lg btn-light btn" onclick="refreshMe()">Refresh Me</button>
+      </div>
+    </div>
+
+
+  <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
